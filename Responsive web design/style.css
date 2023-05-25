@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 40%;
+    display: flex;
+    border: 3px solid black;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+}
+
+.rightNav {
+    width: 70%;
+    text-align: right;
+    padding: 0px 13px;
+}
+
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 8px 20px;
+    font-size: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: rgb(236, 41, 41);
+}
+
+#search {
+    padding: 5px;
+    margin: 20px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgb(236, 238, 238)url('p.jpj.webp');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+}
+
+.firsthalf {
+    width: 82%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.secondhalf {
+    width: 82%;
+}
+
+.secondhalf img {
+    width: 40%;
+    border: 3px solid white;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.text-big {
+    font-size: 35px;
+}
+
+.text-small {
+    font-size: 20px;
+}
+
+.btn {
+    padding: 4px 10px;
+    margin: 25px 13px;
+    border: 1px solid white;
+    border-radius: 9px;
+    font-size: 20px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.btn-park {
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-park:hover {
+    color: green;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 20px 65px;
+}
+
+.sectionTag {
+    padding: 16px 0;
+}
+
+.SectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.Contact {
+    background-color: rgb(245, 239, 239);
+    height: 700px;
+}
+
+.text-center {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+
+.form {
+    max-width: 1000px;
+    margin: 2px auto;
+}
+
+.form-input {
+    width: 70%;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 15px 81px;
+    padding: 5px 3px;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 23px;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width:1279px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        transform: all 0.3s ease-out;
+        height: 400px;
+    }
+    .burger {
+        display: block;
+    }
+    .h-nav-resp {
+        height: 72px;
+    }
+    .v-class-resp {
+        opacity: 0;
+    }
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .secondhalf img {
+        width: 22%;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .text-small {
+        text-align: center;
+    }
+    .text-big {
+        text-align: center;
+    }
+    .buttons {
+        text-align: center;
+    }
+}
